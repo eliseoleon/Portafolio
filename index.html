@@ -1,17 +1,23 @@
 
 
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Eliseo León Páez </title>
-    <link rel="icon" type="image/png"  href="">
+    <link rel="icon" href="dragon4.ico">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
+   <!-- <link rel="stylesheet" href="media.css" media="screen and (max-width:768px)"/ -->
     <link rel="stylesheet" href="estilos1.css">
+    <style>
+
+    </style>
+    <meta name="viewport" content="width=device-width">
 </head>
 <body>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
     <header class="header">
         <div class="container">
   <nav class="menu">
@@ -47,7 +53,7 @@
             <div class="project-details">
          <h3 class="project-title">Pagina Web de Front-end y Back-end</h3>
        <p class="project-date"><small><strong>fecha</strong>11/02/2019</small></p>
-       <p>Puedes verlo en ----</p>
+       <p>Puedes verlo  <a href="https://eliseoleon.github.io/Articulo-github/">aquí</a></p>
        <p class="projet-description">La pagina web no tiene tanta interactividad pero tiene unos temas importantes en los cuales nos explican que es ser un desarrollador
            Front-end y un desarrollador Back-end.
         </div>
@@ -82,7 +88,7 @@
     </section>
     <section id="contacto" class="contact">
         <div class="container">
-        <form action="/nsjknd" class="form-email">
+        <form action="http://www.gmail.com" class="form-email">
             <h3>¿Creamos algo juntos?</h3>
 <input type="text" placeholder="Dejame tu email" >
 <button>Enviar</button>
@@ -106,6 +112,30 @@
         </p>
     </div>
    </footer>
+   <script>
+      const ipad = window.matchMedia('screen and (max-width: 767px)');
+   const menu = document.querySelector('.menu');
+   const burgerbutton = document.querySelector('#burger-menu');
+   ipad.addListener(validation)
+   function validation(event){
+       if (event.matches){
+        burgerbutton.addEventListener('click', hideShow)
+       } else{
+        burgerbutton.removeEventListener('click', hideShow)
+       }
+
+   }
+   
+   function hideShow(){
+       if(menu.classList.contains('is-active')){
+        menu.classList.remove('is-active');
+       }
+       else {
+        menu.classList.add('is-active');
+       }
+   
+   }
+   </script>
     
 </body> 
 </html>
