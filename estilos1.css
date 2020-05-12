@@ -106,11 +106,11 @@ h1{
 }
 h1 strong
 {
-    color: #026FFF;
+    color: #01696d;
 }
 
 h2{
-    color:#026FFF;
+    color:#01696d;
     text-transform: uppercase;
     font-family:'Source Sans Pro', sans-serif;
     font-weight: bold;
@@ -187,7 +187,7 @@ text-align: center;
 }
 .contact
 {
-    background-color: #056fff;
+    background-color: #01696d;
     color: white;
     height: 150px;
     display: flex;
@@ -319,7 +319,7 @@ background-position-x: 5px;
     }     
     .menu{
         position: fixed;
-        background: rgba(5, 111, 255, .9);
+        background: #01696dc2;
         z-index: 3;
         top: 0;
         left: -100vw;
